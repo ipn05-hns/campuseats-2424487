@@ -1,13 +1,11 @@
-function VendorCard() {
-  const vendor = {
-    name: 'Kafe Mahallah Ali',
-    location: 'Mahallah Ali, Block C',
-    openHours: '7:00 am - 10:00 pm',
-    isOpen: true
-  }; //
-
+function VendorCard({ vendor, isSelected, onSelect }) {
   return (
-    <div className="card">
+    <button
+      type="button"
+      className={`card ${isSelected ? 'selected' : ''}`}
+      onClick={() => onSelect(vendor.id)}
+      style={{ textAlign: 'left', cursor: 'pointer', width: '100%' }}
+    >
       <div className="thumb">{vendor.name.charAt(0)}</div>
       <h3>{vendor.name}</h3>
       <p className="muted">{vendor.location}</p>
@@ -15,7 +13,7 @@ function VendorCard() {
       <p className={`status ${vendor.isOpen ? 'open' : 'closed'}`}>
         {vendor.isOpen ? 'Open now' : 'Closed'}
       </p>
-    </div>
+    </button>
   ); //
 }
 export default VendorCard;
