@@ -1,0 +1,37 @@
+[
+  {
+    "id": "2424487-kopi-dahlia",
+    "name": "Kopi Dahlia",
+    "location": "Mahallah Asma, Block C",
+    "openHours": "8:00 am - 11:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2424487-m1", "name": "Teh Tarik", "price": 2.5, "category": "Drinks", "popular": true },
+      { "id": "2424487-m2", "name": "Nasi Lemak Ayam", "price": 7.5, "category": "Mains", "popular": true },
+      { "id": "2424487-m3", "name": "Mee Goreng Mamak", "price": 6.0, "category": "Mains", "popular": false },
+      { "id": "2424487-m4", "name": "Kopi O Ais", "price": 2.2, "category": "Drinks", "popular": false }
+    ]
+  },
+  {
+    "id": "2415666-selera-bonda",
+    "name": "Selera Bonda",
+    "location": "Mahallah Ali, Cafeteria",
+    "openHours": "9:00 am - 9:00 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2415666-m1", "name": "Ayam Penyet", "price": 9.0, "category": "Mains", "popular": true },
+      { "id": "2415666-m2", "name": "Sirap Bandung", "price": 2.5, "category": "Drinks", "popular": false }
+    ]
+  },
+  {
+    "id": "2410233-al-madinah-bistro",
+    "name": "Al-Madinah Bistro",
+    "location": "Mahallah Faruq, Ground Floor",
+    "openHours": "7:00 am - 11:59 pm",
+    "isOpen": true,
+    "menu": [
+      { "id": "2410233-m1", "name": "Roti Canai", "price": 1.5, "category": "Mains", "popular": true },
+      { "id": "2410233-m2", "name": "Milo Ais", "price": 3.0, "category": "Drinks", "popular": true }
+    ]
+  }
+]
