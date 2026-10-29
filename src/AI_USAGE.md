@@ -17,3 +17,9 @@
 - What I asked for: AbortController pattern for useEffect and form validation handling.
 - What I kept, changed or rejected, and why: Kept abort controller return cleanup function; custom validated strings without third party libraries.
 - One thing the AI got wrong and how I fixed it: AI initially forgot to filter out items when qty reaches 0 in handleChangeQty, added .filter(l => l.qty > 0).
+
+## Week 4
+- Tool(s): Gemini
+- What I asked for: React Router 8 nested routes syntax with Layout Outlet and Context integration.
+- What I kept, changed or rejected, and why: Adopted BrowserRouter without separate router package; placed CartProvider inside BrowserRouter.
+- One thing the AI got wrong and how I fixed it: AI initially suggested react-router-dom, which was replaced with react-router for React Router 8 standard.
