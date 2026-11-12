@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
-import { CartProvider } from './context/cart-context.js'
+import { CartProvider } from './context/CartProvider.jsx'
 import { AuthProvider } from './context/AuthProvider.jsx'
 import Layout from './components/Layout.jsx'
 import HomePage from './pages/HomePage.jsx'
