@@ -23,3 +23,9 @@
 - What I asked for: React Router 8 nested routes syntax with Layout Outlet and Context integration.
 - What I kept, changed or rejected, and why: Adopted BrowserRouter without separate router package; placed CartProvider inside BrowserRouter.
 - One thing the AI got wrong and how I fixed it: AI initially suggested react-router-dom, which was replaced with react-router for React Router 8 standard.
+
+## Week 5
+- Tool(s): Gemini
+- What I asked for: Debugging TypeError in Header.jsx cart badge count and preserving route state in ProtectedRoute.jsx.
+- What I kept, changed or rejected, and why: Kept passing `state={{ from: location.pathname }}` to redirect users back after login; rejected generic navbar boilerplate and wrote Firebase setup, AuthProvider, and personal feature logic myself.
+- One thing the AI got wrong and how I fixed it: AI assumed the cart array in useCart() was named `items` instead of `cart` and used wrong CSS class names (`site-header` and `brand`), which I fixed to match my existing state and `header` classes.

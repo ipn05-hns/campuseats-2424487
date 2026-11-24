@@ -13,20 +13,21 @@ import { AuthContext } from './auth-context.js'
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true) // true until Firebase answers
 
+  // Listen, don't ask: runs once on load and on every sign-in / sign-out.
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
       setUser(firebaseUser)
       setLoading(false)
     })
-    return unsubscribe
+    return unsubscribe // cleanup: stop listening
   }, [])
 
   async function register(name, email, password) {
     const credential = await createUserWithEmailAndPassword(auth, email, password)
     await updateProfile(credential.user, { displayName: name })
-    setUser({ ...credential.user, displayName: name })
+    setUser({ ...credential.user, displayName: name }) // show the name at once
   }
 
   function login(email, password) {
